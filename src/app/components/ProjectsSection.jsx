@@ -7,54 +7,54 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Basic Restaurant API Golang",
+    description: "gin, jwt",
+    image: "/images/projects/golangProject.png",
+    tag: ["All","Golang", "Web"],
+    gitUrl: "https://github.com/ngezLin/restaurant-api",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Bank-system Python",
+    description: "University project (CLI)",
+    image: "/images/projects/bankSystem.png",
+    tag: ["All", "Python"],
+    gitUrl: "https://github.com/ngezLin/BankSystem-Python",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Network Analyzer tools",
+    description: "University project(tkinter, API)",
+    image: "/images/projects/packetCapturer.png",
+    tag: ["All", "Python"],
+    gitUrl: "https://github.com/ngezLin/Network-Traffic-tools-Python",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    title: "Todo-List Laravel",
+    description: "Auth, Middleware, Basic CRUD",
+    image: "/images/projects/todolist.png",
+    tag: ["All", "PHP", "Web"],
+    gitUrl: "https://github.com/ngezLin/todolist-laravel",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Password Generator Javascript",
+    description: "belom",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Javascript", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "Figma design",
+    description: "belom",
+    image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -97,8 +97,18 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Golang"
+          isSelected={tag === "Golang"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="PHP"
+          isSelected={tag === "PHP"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Python"
+          isSelected={tag === "Python"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
