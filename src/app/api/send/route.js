@@ -3,25 +3,29 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
+const toEmail = process.env.TO_EMAIL; // Add this in your env (e.g. vincentiusf17@gmail.com)
 
 export async function POST(req) {
   const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
+  console.log("Contact form submitted:", { email, subject, message });
+
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: [fromEmail, email],
-      subject: subject,
+      to: [toEmail],
+      subject: subject || "New message from portfolio",
       react: (
         <>
-          <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
+          <h1>New Message from Portfolio</h1>
+          <p><strong>From:</strong> {email}</p>
+          <p><strong>Subject:</strong> {subject}</p>
+          <p><strong>Message:</strong></p>
           <p>{message}</p>
         </>
       ),
     });
-    return NextResponse.json(data);
+
+    return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("Email send error:", error);
     return NextResponse.json({ error: error.message }, { status: 500 });
