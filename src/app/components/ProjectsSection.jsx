@@ -10,7 +10,7 @@ const projectsData = [
     title: "Basic Restaurant API Golang",
     description: "gin, jwt",
     image: "/images/projects/golangProject.png",
-    tag: ["All","Golang", "Web"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/ngezLin/restaurant-api",
     previewUrl: "/",
   },
@@ -37,7 +37,7 @@ const projectsData = [
     title: "Todo-List Laravel",
     description: "Auth, Middleware, Basic CRUD",
     image: "/images/projects/todolist.png",
-    tag: ["All", "PHP", "Web"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/ngezLin/todolist-laravel",
     previewUrl: "/",
   },
@@ -46,7 +46,7 @@ const projectsData = [
     title: "Password Generator Javascript",
     description: "belom",
     image: "/images/projects/5.png",
-    tag: ["All", "Javascript", "Web"],
+    tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -94,16 +94,6 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Golang"
-          isSelected={tag === "Golang"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="PHP"
-          isSelected={tag === "PHP"}
         />
         <ProjectTag
           onClick={handleTagChange}
