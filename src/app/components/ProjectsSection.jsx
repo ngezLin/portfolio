@@ -41,24 +41,24 @@ const projectsData = [
     gitUrl: "https://github.com/ngezLin/todolist-laravel",
     previewUrl: "/",
   },
-  {
-    id: 5,
-    title: "Password Generator Javascript",
-    description: "belom",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Figma design",
-    description: "belom",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 5,
+  //   title: "Password Generator Javascript",
+  //   description: "belom",
+  //   image: "/images/projects/5.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Figma design",
+  //   description: "belom",
+  //   image: "/images/projects/1.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
 ];
 
 const ProjectsSection = () => {
