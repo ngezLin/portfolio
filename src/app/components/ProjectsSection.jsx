@@ -41,7 +41,6 @@ const projectsData = [
     gitUrl: "https://github.com/ngezLin/todolist-laravel",
     previewUrl: "https://github.com/ngezLin/gostore",
   },
-<<<<<<< HEAD
   {
     id: 5,
     title: "GoStore",
@@ -60,26 +59,6 @@ const projectsData = [
     gitUrl: "https://github.com/ngezLin/cashier-laravel",
     previewUrl: "/",
   },
-=======
-  // {
-  //   id: 5,
-  //   title: "Password Generator Javascript",
-  //   description: "belom",
-  //   image: "/images/projects/5.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Figma design",
-  //   description: "belom",
-  //   image: "/images/projects/1.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
->>>>>>> 760a1b411d38ff0323c59f259396f3bbe9590d14
 ];
 
 const ProjectsSection = () => {
