@@ -15,16 +15,11 @@ const achievementsList = [
     value: "7",
     // postfix: "+",
   },
-  {
-    prefix: "<",
-    metric: "Years",
-    value: "1",
-  },
+
   {
     // prefix: "~",
     metric: "PicoCTF solved (Easy)",
     value: "21",
-
   },
   {
     metric: "PicoCTF solved (Medium)",
