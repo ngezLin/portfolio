@@ -19,7 +19,7 @@ const projectsData = [
     title: "Bank-system Python",
     description: "University project (CLI)",
     image: "/images/projects/bankSystem.png",
-    tag: ["All", "CLI"],
+    tag: ["All", "Python"],
     gitUrl: "https://github.com/ngezLin/BankSystem-Python",
     previewUrl: "/",
   },
@@ -28,7 +28,7 @@ const projectsData = [
     title: "Network Analyzer tools python",
     description: "University project(tkinter, API)",
     image: "/images/projects/packetCapturer.png",
-    tag: ["All", "Desktop"],
+    tag: ["All", "Python"],
     gitUrl: "https://github.com/ngezLin/Network-Traffic-tools-Python",
     previewUrl: "/",
   },
@@ -43,20 +43,20 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "GoStore",
-    description: "belom",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Cashier-app Laravel",
+    description: "Auth, Middleware, CRUD",
+    image: "/images/projects/1.png",
+    tag: ["All", "Laravel"],
+    gitUrl: "https://github.com/ngezLin/cashier-laravel",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Cashier-app Laravel",
-    description: "Auth, Middleware, CRUD",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/ngezLin/cashier-laravel",
+    title: "coming soon",
+    description: "-",
+    image: "/images/projects/5.png",
+    tag: ["All"],
+    gitUrl: "",
     previewUrl: "/",
   },
 ];
@@ -102,13 +102,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Desktop"
-          isSelected={tag === "Desktop"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="CLI"
-          isSelected={tag === "CLI"}
+          name="Python"
+          isSelected={tag === "Python"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
