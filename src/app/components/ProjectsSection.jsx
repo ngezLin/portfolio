@@ -7,11 +7,11 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Basic Restaurant API Golang",
+    title: "GoStore",
     description: "gin, jwt",
     image: "/images/projects/golangProject.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/ngezLin/restaurant-api",
+    tag: ["All", "Go"],
+    gitUrl: "https://github.com/ngezLin/gostore",
     previewUrl: "/",
   },
   {
@@ -37,7 +37,7 @@ const projectsData = [
     title: "Todo-List Laravel",
     description: "Auth, Middleware, Basic CRUD",
     image: "/images/projects/todolist.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Laravel"],
     gitUrl: "https://github.com/ngezLin/todolist-laravel",
     previewUrl: "https://github.com/ngezLin/gostore",
   },
@@ -92,8 +92,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Laravel"
+          isSelected={tag === "Laravel"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Go"
+          isSelected={tag === "Go"}
         />
         <ProjectTag
           onClick={handleTagChange}
