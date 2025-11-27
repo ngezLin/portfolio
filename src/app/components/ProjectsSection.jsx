@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/golangProject.png",
     tag: ["All", "JavaScript"],
     gitUrl: "https://github.com/kd-api/",
-    previewUrl: "https://klampisdepo.app.vercel.app/",
+    previewUrl: "https://klampisdepo.vercel.app/",
   },
   {
     id: 2,
