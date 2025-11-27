@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "GoStore",
-    description: "gin, jwt",
+    title: "Klampis Depo Cashier App",
+    description: "reactjs, golang",
     image: "/images/projects/golangProject.png",
-    tag: ["All", "Go"],
-    gitUrl: "https://github.com/ngezLin/gostore",
-    previewUrl: "/",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/kd-api/",
+    previewUrl: "https://klampisdepo.app.vercel.app/",
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const projectsData = [
     image: "/images/projects/todolist.png",
     tag: ["All", "Laravel"],
     gitUrl: "https://github.com/ngezLin/todolist-laravel",
-    previewUrl: "https://github.com/ngezLin/gostore",
+    previewUrl: "/",
   },
   {
     id: 5,
@@ -52,12 +52,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "coming soon",
-    description: "-",
-    image: "/",
-    tag: ["All"],
-    gitUrl: "",
-    previewUrl: "/",
+    title: "King Kong Splash Landing Page",
+    description: "Made a landing page for King Kong Splash waterpark",
+    image: "/images/projects/kingkongsplash.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/ngezLin/kingkong-splash",
+    previewUrl: "https://kolamrenangkingkong.com",
   },
 ];
 
@@ -97,8 +97,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Go"
-          isSelected={tag === "Go"}
+          name="JavaScript"
+          isSelected={tag === "JavaScript"}
         />
         <ProjectTag
           onClick={handleTagChange}

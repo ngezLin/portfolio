@@ -57,13 +57,14 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          I am a passionate backend developer with experience in building scalable and secure systems. 
-          I specialize in designing robust APIs and optimizing server-side logic to improve performance. 
-          With a strong foundation in languages like Golang and PHP, I’m dedicated to writing clean, 
-          efficient code. Additionally, as a penetration tester, I actively seek vulnerabilities 
-          in systems and applications to enhance security and ensure a safe environment for users. 
-          My goal is to combine development expertise with security practices to create secure, 
-          high-performance applications.
+            I am a passionate backend developer with experience in building
+            scalable and secure systems. I specialize in designing robust APIs
+            and optimizing server-side logic to improve performance. With a
+            strong foundation in languages like Golang and PHP, I actively seek
+            vulnerabilities in systems and applications to enhance security and
+            ensure a safe environment for users. My goal is to combine
+            development expertise with security practices to create secure,
+            high-performance applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
